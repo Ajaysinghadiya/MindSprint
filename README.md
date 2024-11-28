@@ -14,13 +14,19 @@ Check out the live demo of MindSprint [here](https://mindsprint-github-io.onrend
 * Responsive Design: Optimized for both desktop and mobile devices.
 
 # Usage
-1. Authentication:
+1. *Authentication:*
 * Enter your name and click "Start" to begin.
-2. Quiz Selection:
+2. *Quiz Selection:*
 * Choose a quiz topic (Data Structures, Databases, React, or Java).
-3. Answer Questions:
+3. *Answer Questions:*
   * Each question is timed for 15 seconds.
   * Use the "Next" and "Back" buttons to navigate through questions.
-4. Submit Quiz:
+4. *Submit Quiz:*
   * Submit your answers and see your score.
   * View your rank on the leaderboard.
+ 
+# Technologies Used
+* *HTML5:* For structuring the web page.
+* *CSS3:* For styling and responsive design.
+* *JavaScript:* For quiz logic and interactivity.
+* *LocalStorage:* For saving and retrieving leaderboard data.
