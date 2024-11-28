@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png" sizes="32x32">
+    <title>MindSprint</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="auth-page" class="page">
+        <h1>Welcome to the Quiz!</h1>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="startQuiz()">Start</button>
+    </div>
+
+    <div id="quiz-selection-page" class="page" style="display: none;">
+        <h1>Select a Quiz</h1>
+        <button onclick="selectQuiz('data-structures')">Data Structures</button>
+        <button onclick="selectQuiz('databases')">Databases</button>
+        <button onclick="selectQuiz('react')">React</button>
+        <button onclick="selectQuiz('java')">Java</button>
+    </div>
+
+    <div id="quiz-page" class="page" style="display: none;">
+        <h1 id="quiz-title">Quiz Title</h1>
+        <div id="progress-bar"><span style="width: 50%;"></span></div>
+        <div id="timer">Time Left: <span id="time">15</span> seconds</div>
+        <div id="question-container">
+            <!-- Example question and options -->
+            <h2>What is the capital of France?</h2>
+            <div>Paris</div>
+            <div>Berlin</div>
+            <div>Madrid</div>
+            <div>Rome</div>
+        </div>
+        <button id="prev-btn" onclick="prevQuestion()" style="display:none;">Back</button>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+        <button id="submit-btn" onclick="submitQuiz()" style="display:none;">Submit</button>
+    </div>
+
+    <div id="result-page" class="page" style="display: none;">
+        <h1 id="result-message">Your Results!</h1>
+        <button onclick="goToMainPage()">Back to Main</button>
+        <h2>Leaderboard</h2>
+        <div id="leaderboard"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
