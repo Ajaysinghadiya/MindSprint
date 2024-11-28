@@ -12,3 +12,9 @@ Check out the live demo of MindSprint [here](https://mindsprint-github-io.onrend
 * Progress Bar: Visual progress indicator for each quiz.
 * Leaderboard: Track and compare your scores with others.
 * Responsive Design: Optimized for both desktop and mobile devices.
+
+# Usage
+. Authentication:
+* Enter your name and click "Start" to begin.
+.Quiz Selection:
+* Choose a quiz topic (Data Structures, Databases, React, or Java).
